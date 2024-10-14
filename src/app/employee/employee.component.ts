@@ -33,7 +33,7 @@ export class EmployeeComponent {
 
   onSubmit() {
     const employee: Employee = new Employee(this.name.value,
-      new Date(this.dateOfBirth.value),
+      this.dateOfBirth.value,
       this.city.value,
       this.salary.value,
       this.gender.value,
